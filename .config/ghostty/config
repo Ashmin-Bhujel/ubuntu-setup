@@ -1,0 +1,9 @@
+font-family = Liga SFMono Nerd Font
+font-size = 14
+theme = Seti
+gtk-titlebar = false
+window-padding-x = 0
+window-padding-y = 0
+window-padding-balance = true
+window-width = 130
+window-height = 32
