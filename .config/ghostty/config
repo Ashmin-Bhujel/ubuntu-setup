@@ -1,5 +1,6 @@
 font-family = Liga SFMono Nerd Font
 font-size = 14
+font-feature = -calt, -liga, -dlig
 theme = Seti
 gtk-titlebar = false
 window-padding-x = 0

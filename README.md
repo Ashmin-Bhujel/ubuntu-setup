@@ -26,7 +26,7 @@ sudo snap refresh snap-store
 ## Install Necessary Packages
 
 ```bash
-sudo nala install curl wget git git-flow build-essential net-tools gnome-tweaks gnome-shell-extension-manager btop gdb ubuntu-restricted-extras vlc libgtop2-dev fzf ripgrep tldr bat
+sudo nala install curl wget git git-flow build-essential net-tools gnome-tweaks gnome-shell-extension-manager btop gdb ubuntu-restricted-extras vlc libgtop2-dev fzf ripgrep tldr bat fd-find
 ```
 
 ## Install Fastfetch
@@ -233,7 +233,7 @@ sudo nala install fastfetch
   nvm install --lts
   ```
 
-  **Note:** Its recommended to visit the official Node.js site for latest version of installation command.
+  **Note:** Its recommended to visit the official [Node.js](https://nodejs.org/en) site for latest version of installation command.
 
 - PNPM
 
@@ -246,3 +246,35 @@ sudo nala install fastfetch
   ```bash
   sudo nala install python3-full python3-pip python3-venv
   ```
+
+- Neovim
+
+  ```bash
+  curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+  sudo rm -rf /opt/nvim-linux-x86_64
+  sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+  ```
+
+  Then add this to your shell config (~/.bashrc or ~/.zshrc or other)
+
+  ```bash
+  export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+  ```
+
+  - Lazyvim
+
+    ```bash
+    git clone https://github.com/LazyVim/starter ~/.config/nvim
+    ```
+
+    Use the `LazyExtra` and `TSInstall` command to install required plugins, LSPs, etc.
+
+- Docker
+
+  Visit Docker Engine [installation](https://docs.docker.com/engine/install/ubuntu/) site.
+
+  - Lazydocker
+
+    ```bash
+    curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+    ```
