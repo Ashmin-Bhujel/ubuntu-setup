@@ -104,6 +104,10 @@ sudo nala install fastfetch
 
 ## Install Web Browser
 
+- Helium browser (Chromium based)
+
+  Visit the official site [here](https://helium.computer/).
+
 - Brave browser (Chromium based)
 
   ```bash
