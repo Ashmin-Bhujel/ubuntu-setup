@@ -26,7 +26,7 @@ sudo snap refresh snap-store
 ## Install Necessary Packages
 
 ```bash
-sudo nala install curl wget git git-flow build-essential net-tools gnome-tweaks gnome-shell-extension-manager btop gdb ubuntu-restricted-extras vlc libgtop2-dev fzf ripgrep tldr bat fd-find
+sudo nala install curl wget git git-flow build-essential net-tools gnome-tweaks gnome-shell-extension-manager btop gdb ubuntu-restricted-extras vlc libgtop2-dev fzf ripgrep bat fd-find
 ```
 
 ## Install Fastfetch
@@ -82,31 +82,19 @@ sudo nala install fastfetch
 1. Tweak system settings and configure I/O sound using `alsamixer`
 
 2. Gnome extensions
-   - Appindicator and KStausNotifierItem Support - [ 3v1n0 ] `Disable System Appindicator First`
+   - Appindicator and KStausNotifierItem Support - [ 3v1n0 ] `Disable the default Appindicator First`
    - Clipboard Indicator - [ Tudmotu ]
    - System Monitor - [ fmuellner ]
    - Logo Menu - [ Aryan Kausik ]
      - Extension Manager
      - Software Center: snap-store
+   - Transparent Top Bar [ Gonzague ]
    - Ubuntu Dock
      - Icon Size: 32
      - Behaviour - { CA: Focus, minimize or show preview, SA: Cycle through windows }
      - Appearance - { Indicator: Dots (Dominant color), Dynamic: 0 to 100 }
-   - Blur my Shell - [ aunetx ]
-     - Default pipeline - NGB { R: 0, B: 1 }
-     - Overview pipeline - NGB { R: 40, B: 0.2 }
-     - Transparent pipeline - No Effects
-     - Panel - Static, Transparent, Disable in overview
-     - Overview - Overview, Transparent, Sigma: 100, B: 0.6, Folder: Transparent
-     - Dash - Off
-     - Application - Off
-     - Other - LSB(Overview pipeline), SCB (Overview pipeline), Alt-Tab (Default pipeline)
-
+   
 ## Install Web Browser
-
-- Helium browser (Chromium based)
-
-  Visit the official site [here](https://helium.computer/).
 
 - Brave browser (Chromium based)
 
@@ -220,7 +208,7 @@ sudo nala install fastfetch
 
 - VS Code
 
-  - Download and install the `.deb` setup file
+  - Download and install the `.deb` setup file from the official website
   - Login to GitHub account and setup VS Code
 
 - Tmux
