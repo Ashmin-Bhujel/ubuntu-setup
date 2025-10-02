@@ -40,7 +40,7 @@ sudo nala install fastfetch
 ## Install Ghostty Terminal
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mkasberg/ghostty-ubuntu/HEAD/install.sh)"
+wget https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.1.3-0-ppa2/ghostty_1.1.3-0.ppa2_amd64_24.04.deb
 ```
 
 ## Setup Zsh and Oh My Zsh
@@ -93,7 +93,7 @@ sudo nala install fastfetch
      - Icon Size: 32
      - Behaviour - { CA: Focus, minimize or show preview, SA: Cycle through windows }
      - Appearance - { Indicator: Dots (Dominant color), Dynamic: 0 to 100 }
-   
+
 ## Install Web Browser
 
 - Brave browser (Chromium based)
@@ -123,6 +123,8 @@ sudo nala install fastfetch
 
   - Create a `zen-local` file inside `/etc/apparmor.d` directory with the following content if a warning pop us when starting up the browser
 
+    **NOTE:** Replace {username} with your username, There will also some configurations needed to be done after initial startup.
+
     ```bash
     # This profile allows everything and only exists to give the
     # application a name instead of having the label "unconfined"
@@ -136,8 +138,6 @@ sudo nala install fastfetch
       include if exists <local/zen>
     }
     ```
-
-    **NOTE:** Replace {username} with your username, There will also some configurations needed to be done after initial startup.
 
   - Extensions
 
@@ -193,7 +193,10 @@ sudo nala install fastfetch
   - Lazygit
 
     ```bash
-    sudo nala install lazygit
+    LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
+    curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+    tar xf lazygit.tar.gz lazygit
+    sudo install lazygit -D -t /usr/local/bin/
     ```
 
   - Setup SSH key
@@ -220,12 +223,12 @@ sudo nala install fastfetch
 
 - Node.js
 
+  **Note:** Its recommended to visit the official [Node.js](https://nodejs.org/en) site for latest version of installation command.
+
   ```bash
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
   nvm install --lts
   ```
-
-  **Note:** Its recommended to visit the official [Node.js](https://nodejs.org/en) site for latest version of installation command.
 
 - PNPM
 
@@ -263,7 +266,9 @@ sudo nala install fastfetch
 
 - Docker
 
-  Visit Docker Engine [installation](https://docs.docker.com/engine/install/ubuntu/) site.
+  **Note:** Follow the post install steps for Docker engine
+
+  Visit Docker Engine [installation site](https://docs.docker.com/engine/install/ubuntu/).
 
   - Lazydocker
 
