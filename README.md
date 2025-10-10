@@ -40,7 +40,7 @@ sudo nala install fastfetch
 ## Install Ghostty Terminal
 
 ```bash
-wget https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.1.3-0-ppa2/ghostty_1.1.3-0.ppa2_amd64_24.04.deb
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mkasberg/ghostty-ubuntu/HEAD/install.sh)"
 ```
 
 ## Setup Zsh and Oh My Zsh
@@ -79,7 +79,7 @@ wget https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.1.3-0-ppa2/g
 
 ## Setup Ubuntu's look and feel
 
-1. Tweak system settings and configure I/O sound using `alsamixer`
+1. Tweak system settings
 
 2. Gnome extensions
    - Appindicator and KStausNotifierItem Support - [ 3v1n0 ] `Disable the default Appindicator First`
