@@ -106,7 +106,7 @@ sudo nala install fastfetch
   - Import Bookmarks
   - Extensions
     - Dark Reader
-    - JSON Formatter [Dark: Icecoder, Light: Eclipse]
+    - JSON Formatter [Dark: Ayu Dark, Light: Xq Light]
     - Material Icons for GitHub
     - React Developer Tools
     - Redux DevTools
@@ -209,7 +209,13 @@ sudo nala install fastfetch
     - Go to GitHub > Settings > SSH and GPG Keys then add the generated SSH key
     - Check the connection by `ssh -T git@github`
 
-- VS Code
+- Zed Code Editor (Rust Based)
+
+  ```bash
+  curl -f https://zed.dev/install.sh | sh
+  ```
+
+- VS Code [Optional]
 
   - Download and install the `.deb` setup file from the official website
   - Login to GitHub account and setup VS Code
@@ -230,19 +236,33 @@ sudo nala install fastfetch
   nvm install --lts
   ```
 
+- Bun.js
+
+  ```bash
+  curl -fsSL https://bun.sh/install | bash
+  ```
+
 - PNPM
 
   ```bash
   curl -fsSL https://get.pnpm.io/install.sh | sh -
   ```
 
-- Python
+- uv and Python
 
-  ```bash
-  sudo nala install python3-full python3-pip python3-venv
-  ```
+  - Install `uv`
 
-- Neovim
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+
+  - Install `python`
+
+    ```bash
+    uv python install
+    ```
+
+- Neovim [Optional]
 
   ```bash
   curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
