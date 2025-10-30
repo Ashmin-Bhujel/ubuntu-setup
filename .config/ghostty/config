@@ -1,8 +1,8 @@
 font-family = Liga SFMono Nerd Font
 font-size = 14
-adjust-cell-height = "20%"
+adjust-cell-height = "18%"
 font-feature = -calt, -liga, -dlig
-theme = TokyoNight Night
+theme = Dimidium
 gtk-titlebar = false
 window-padding-x = 0
 window-padding-y = 0
